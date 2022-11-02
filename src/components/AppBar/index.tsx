@@ -9,7 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import authService from '../../services/auth.service';
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-
+import '../styles.css';
 
 export default function NavBar() {
   const [currentUser, setCurrentUser] = useState(undefined)
@@ -30,7 +30,7 @@ export default function NavBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar className='appbar' position="static" >
         <Toolbar>
           <IconButton
             size="large"

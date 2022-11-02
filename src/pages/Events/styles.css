@@ -1,0 +1,53 @@
+.container {
+    justify-content: center;
+}
+
+.el-paper {
+    width: 100%;
+    max-width: 480px;
+    margin: 10px 10px;
+    padding: 0px 0px 0px 0px;
+}
+
+.el-paper:hover {
+    box-shadow: 2px 6px 18px -3px rgba(25, 0, 48, 0.75);
+}
+
+.avatar-list {
+    margin-right: 10px;
+    padding: 20px 20px 20px;
+}
+
+.typ-primary {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.typ-status[event-status]:after {
+    color: rgb(255, 255, 255);
+    border-radius: 5px 5px 0px 0px;
+    padding-right: 10px;
+    text-align: right;
+    float: right;
+    width: 98%;
+}
+
+.typ-status[event-status="A_REALIZAR"]:after {
+    content: "A realizar";
+    background: rgb(103, 73, 116);
+    background: linear-gradient(90deg, rgb(131, 107, 146) 60%, rgba(214, 145, 0, 1) 100%);
+}
+
+.typ-status[event-status="REALIZADO"]:after {
+    content: "Realizado";
+    background: rgb(103, 73, 116);
+    background: linear-gradient(90deg, rgba(131, 107, 146) 60%, rgb(0, 146, 97) 100%);
+}
+
+.typ-status[event-status="CANCELADO"]:after {
+    content: "Cancelado";
+    background: rgb(103, 73, 116);
+    background: linear-gradient(90deg, rgba(131, 107, 146) 60%, rgb(172, 49, 0) 100%);
+}
+
+@media (min-width: 576px) {}

@@ -31,9 +31,11 @@ export default function User() {
 
     axios.post(API_URL + "/user",
       JSON.stringify(userModel),
-      { headers: { 
-        'Content-Type': 'application/json',
-        'Authorization': authService.getToken() } 
+      {
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': authService.getToken()
+        }
       })
       .then(res => {
         console.log("Novo usuário adicionado");
@@ -45,9 +47,8 @@ export default function User() {
   };
 
   useEffect(() => {
-    //console.log(authHeader())
-    axios.get(API_URL + "/user", 
-    { headers: authHeader()})
+    axios.get(API_URL + "/user",
+      { headers: authHeader() })
       .then((res) => {
         setUsers(res.data);
         //console.log(res.data)
@@ -60,11 +61,11 @@ export default function User() {
 
   return (
     <Container className='container' maxWidth={false} disableGutters={true} >
-      <NavBar/>
+      <NavBar />
       <Paper className='fe-paper' elevation={3} >
         <h1>Adicionar usuário</h1>
 
-        <Box className='boxUser' component="form" sx={{ '& > :not(style)': { my: 1 },}}
+        <Box className='boxUser' component="form" sx={{ '& > :not(style)': { my: 1 }, }}
           noValidate
           autoComplete="off">
 
