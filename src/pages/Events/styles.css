@@ -1,12 +1,14 @@
-.container {
+
+.content{
     justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .el-paper {
-    width: 100%;
-    max-width: 480px;
-    margin: 10px 10px;
-    padding: 0px 0px 0px 0px;
+    min-width: 410px;
+    margin: 10px ;
+    border-collapse: collapse;
 }
 
 .el-paper:hover {
@@ -50,4 +52,9 @@
     background: linear-gradient(90deg, rgba(131, 107, 146) 60%, rgb(172, 49, 0) 100%);
 }
 
-@media (min-width: 576px) {}
+@media (min-width: 632px) {
+    .el-paper{
+        width: 580px;
+        border-collapse: collapse;
+    }
+}
