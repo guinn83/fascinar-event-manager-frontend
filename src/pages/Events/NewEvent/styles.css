@@ -1,0 +1,19 @@
+.fe-paper {
+    width: 85%;
+    max-width: 530px;
+    margin: 20px auto;
+    padding: 5px 30px 40px;
+}
+
+.box-items {
+    display: flex;
+}
+
+.box-avatar {
+    margin-right: 10px;
+}
+
+.boxText {
+    width: 100%;
+}
+

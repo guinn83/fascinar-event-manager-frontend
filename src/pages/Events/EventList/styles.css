@@ -1,0 +1,94 @@
+.container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(254, 250, 255, 1) 0%, rgb(248, 244, 250) 60%, rgb(197, 185, 204) 100%);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.event-list {
+    width: 100%;
+    min-width: 400px;
+}
+
+.el-paper {
+    margin: 11px 30px;
+    
+}
+
+.el-paper:hover {
+    box-shadow: 2px 6px 18px -3px rgba(25, 0, 48, 0.75);
+}
+
+.lst-Item{
+    padding: 0px 10px;
+}
+
+.avatar-list {
+    margin-right: 10px;
+    padding: 20px 20px 20px;
+}
+
+.typ-primary {
+    font-size: 18;
+    font-weight: 600;
+}
+
+.txt-title {
+    color: black;
+    font-size: 20;
+    font-weight: 600;
+}
+
+.txt-summary {
+    color: #000000;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.typ-status[event-status]:after {
+    color: rgb(255, 255, 255);
+    border-radius: 5px 5px 0px 0px;
+    padding-right: 10px;
+    text-align: right;
+    float: right;
+    width: 98%;
+}
+
+.typ-status[event-status="A_REALIZAR"]:after {
+    content: "A realizar";
+    background: #674974;
+    background: linear-gradient(90deg, #836b92 60%, #d69100 100%);
+}
+
+.typ-status[event-status="REALIZADO"]:after {
+    content: "Realizado";
+    background: rgb(103, 73, 116);
+    background: linear-gradient(90deg, rgba(131, 107, 146) 60%, #009261 100%);
+}
+
+.typ-status[event-status="CANCELADO"]:after {
+    content: "Cancelado";
+    background: rgb(103, 73, 116);
+    background: linear-gradient(90deg, rgba(131, 107, 146) 60%, rgb(172, 49, 0) 100%);
+}
+
+.summary-box{
+    display: flex;
+    box-shadow:  0px 1px 3px 0px #5b4b69bf;
+}
+
+.summary-icon{
+    display: flex;
+    margin-right: 5px;
+}
+
+@media (min-width: 600px) {
+    .event-list {
+        width: 580px;
+    }
+}
